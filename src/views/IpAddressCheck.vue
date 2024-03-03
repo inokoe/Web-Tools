@@ -15,7 +15,7 @@ const isp = ref('')
 
 
 function get_ip_detail() {
-    axios.get('https://other-country-ip.mine.workers.dev/json/')
+    axios.get('https://oci.nanoc.work/json/')
         .then(response => {
             if (response.status == '200') {
                 console.log(response.data)
@@ -33,7 +33,7 @@ function get_ip_detail() {
 }
 
 onMounted(() => {
-    axios.get('https://get-request-ip.mine.workers.dev/')
+    axios.get('https://gri.nanoc.work/')
         .then(response => {
             if (response.status == '200') {
                 ip.value = response.data;

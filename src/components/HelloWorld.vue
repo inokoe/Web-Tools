@@ -10,7 +10,7 @@ defineProps({
 <template>
   <div class="greetings">
     <div class="title">
-      <a class="toGithub" href="https://vitejs.dev/" target="_blank" rel="noopener">
+      <a class="toGithub" href="https://github.com/inokoe/Web-Tools" target="_blank" rel="noopener">
         <img alt="Github logo" class="logo" src="@/assets/github.svg" />
       </a>
       <h1 class="green">{{ msg }}</h1>
@@ -24,8 +24,8 @@ defineProps({
 <style scoped>
 .title {
   display: flex;
-  place-items: center;
-  text-align: center;
+  justify-content: center; /* 水平居中 */
+  align-items: center; /* 垂直居中 */
   height: auto;
 }
 
@@ -47,7 +47,6 @@ h1 {
   font-weight: 500;
   font-size: 2.6rem;
   position: relative;
-  /* top: -10px; */
   padding-left: 10px;
 }
 
@@ -62,7 +61,6 @@ h3 {
 }
 
 @media (min-width: 1024px) {
-
   .greetings h1,
   .greetings h3 {
     text-align: left;
